@@ -23,8 +23,7 @@ type Category struct {
 func main() {
 	gin.ForceConsoleColor()
 
-	dsn := "postgresql://gxtech:xsM7tVVoWmItLbmB2nOVEw@gxtech-1068.g8x.gcp-southamerica-east1.cockroachlabs.cloud:26257/savemylinks?sslmode=verify-full"
-	// dsn := "host=localhost user=gorm password=gorm dbname=gorm port=9920"
+	dsn := "host=localhost user=gorm password=gorm dbname=gorm port=9920"
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 
 	if err != nil {
