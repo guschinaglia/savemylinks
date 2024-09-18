@@ -39,6 +39,7 @@ func handleRequest(db *gorm.DB) {
 	r := gin.Default()
 	r.GET("/users", models.AllUsers(db))
 	r.POST("/users", models.CreateUser(db))
+	r.POST("/login", )
 	r.Run()
 }
 
